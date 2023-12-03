@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Instructor Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="css/toastr.min.css" rel="stylesheet">
+    
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">EDUCONNECT</a>
+            <div class="navbar-nav">
+                <a class="nav-link" href="student.html">Student Page</a>
+                <a class="nav-link" href="instructor.html">Instructor Page</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="text-center p-4">
+            <h1>Instructor Page</h1>
+            <hr>    
+        </div>
+        <div id="certification-form" class="registration-container">
+            <input type="text" id="student-address" placeholder="Enter Student's Address"> 
+            <button id="issue-certificate-button" class="btn btn-primary">Award Certificate</button>
+        </div>
+        <div class="text-left p-2">
+            <h5 id="currentUserAddress"></h5>      
+          </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.37/dist/web3.min.js"></script>
+    <script src="js/dist/toastr.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
