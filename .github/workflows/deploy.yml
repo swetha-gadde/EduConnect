@@ -1,3 +1,9 @@
+name: Build and Deploy to GitHub Pages
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow on push events to the main branch
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -8,16 +14,16 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: '18'  # <-- Adjust this to your Node.js version
+          node-version: '18'  # Adjust this to your Node.js version if needed
 
       - name: Install Dependencies
         run: npm install
 
       - name: Build Project
-        run: npm run build  # <-- Adjust this if your build command is different
+        run: npm run build  # Make sure you have a build script in package.json
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          branch: gh-pages  # <-- This is the branch to which your site will be deployed
-          folder: dist      # <-- Adjust this if your build output folder is different
+          branch: gh-pages  # The branch the action should deploy to
+          folder: dist      # The folder the action should deploy
