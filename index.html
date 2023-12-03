@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EDUCONNECT</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="css/toastr.min.css" rel="stylesheet">
+    <style>
+      html, body {
+          height: 100%; /* Make sure html and body cover full height */
+          margin: 0; /* Remove default margin */
+          padding: 0; /* Remove default padding */
+      }
+
+      .full-height-container {
+          height: 100vh; /* Set container height to full viewport height */
+          background-image: url('images/edu1.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+      }
+      
+        .background-image {
+            background-image: url('images/edu.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            backdrop-filter: blur(5px);
+        }
+    </style>
+     
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">EDUCONNECT</a>
+            <div class="navbar-nav">
+                <a class="nav-link" href="student.html">Student Page</a>
+                <a class="nav-link" href="instructor.html">Instructor Page</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid full-height-container">
+        <div class="text-center p-4">
+            <h1>Blockchain powered EDUCONNECT</h1>
+            <hr>    
+        </div>
+        <div id="registrationRow" class="registration-container">
+            <h2 class="registration-heading">Register as Student or Instructor</h2>
+            <input type="text" id="userFullName" placeholder="Enter Your Full Name">
+            <div class="registration-buttons">
+                <button id="registerStudent" class="btn btn-primary">Student</button>
+                <button id="registerInstructor" class="btn btn-secondary">Instructor</button>
+            </div>
+        </div>
+        <div class="text-left p-2">
+          <h5 id="currentUserAddress"></h5>      
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.37/dist/web3.min.js"></script>
+    <script src="js/dist/toastr.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

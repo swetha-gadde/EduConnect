@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... [head tags similar to index.html] ... -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Page</title>
+    <!-- Include Bootstrap, Toastr CSS, and custom styles here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="css/toastr.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">EDUCONNECT</a>
+            <div class="navbar-nav">
+                <a class="nav-link" href="student.html">Student Page</a>
+                <a class="nav-link" href="instructor.html">Instructor Page</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="subscription-form">
+            <input type="text" id="instructor-address" placeholder="Enter Instructor's Address"> 
+            <button id="subscribe-button" class="btn btn-primary">Subscribe</button>
+        </div>
+
+        <div id="rating-instructor-form">
+            <input type="text" id="rinstructor-address" placeholder="Enter the address of Instructor">
+            <input type="text" id="rinstructor-rating" placeholder="Rate between 1-5">
+            <button id="rate-instructor-button" class="btn btn-primary">Rate Instructor</button>
+        </div>
+
+        <div id="display-instructor-ratings">
+            <button id="display-ratings-button" class="btn btn-primary">Display Instructor Ratings</button>
+            <table id="ratings-table" class="table">
+                <thead>
+                    <tr>
+                        <th>Instructor Address</th>
+                        <th>Instructor Name</th>
+                        <th>Instructor Rating</th>
+                    </tr>
+                </thead>
+                <tbody id="ratings-table-body">
+                    <!-- Ratings will be added here -->
+                </tbody>
+            </table>
+
+        </div>
+        <div id="display-balance-button">
+            <button id="display-balance-button" class="btn btn-primary">View My Balance</button>
+            <table id="balance-table2" class="table">
+                <thead>
+                    <tr>
+                        <th>EduToken Balance</th>
+                        <th>NFT Balance</th>
+                    </tr>
+                </thead>
+                <tbody id="ratings-table-body2">
+                    <!-- Ratings will be added here -->
+                </tbody>
+            </table>
+
+        </div>
+
+        <div>
+            <button id="retrieve-resume" class="btn btn-primary">Retrieve My Resume</button>
+        </div>
+
+        <div class="centered-container">
+            <button id="apply-for-job-button" class="green-button">Apply for Job</button>
+            <input type="text" id="employerAddress" placeholder="Enter Employer Address">
+            <input type="text" id="applyFee" placeholder="Enter Application Fee">
+        </div>
+        <div class="text-left p-2">
+            <h5 id="currentUserAddress"></h5>      
+          </div>     
+    </div>
+    <!-- Include jQuery, Bootstrap JS, Web3.js, Toastr JS, and app.js here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.37/dist/web3.min.js"></script>
+    <script src="js/dist/toastr.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
