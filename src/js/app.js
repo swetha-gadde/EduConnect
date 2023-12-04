@@ -2,7 +2,7 @@
 App = {
   web3: null,
   contracts: {},
-  addressEdu: "0x9795cAA6447585958CC4Dad6e4B73A2E2db69fa9",
+  addressEdu: "0x340A71ac6Df7Be760cA853767dAE0B7412015691",
   names: new Array(),
   url: "http://127.0.0.1:7545",
   // chairPerson: null,
